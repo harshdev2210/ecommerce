@@ -132,6 +132,48 @@ Here are some other useful Artisan commands you may need:
 
 ---
 
+## API Endpoints
+
+**1. Create Product**
+
+- **Endpoint:** `POST http://127.0.0.1:8000/api/products`
+- **Request Body (JSON):**
+  ```json
+  {
+    "name": "add new product",
+    "description": "new description",
+    "price": "22",
+    "quantity": "30"
+  }
+  ```
+
+**2. Get All Products**
+
+- **Endpoint:** `GET http://127.0.0.1:8000/api/products`
+
+**3. Get Single Product**
+
+- **Endpoint:** `GET http://127.0.0.1:8000/api/products/{id}`
+
+**4. Update Product**
+
+- **Endpoint:** `PUT http://127.0.0.1:8000/api/products/{id}`
+- **Request Body (JSON):**
+  ```json
+  {
+    "name": "updated product name",
+    "description": "updated description",
+    "price": "25",
+    "quantity": "40"
+  }
+  ```
+
+**5. Delete Product**
+
+- **Endpoint:** `DELETE http://127.0.0.1:8000/api/products/{id}`
+
+---
+
 ## Troubleshooting
 
 ### Common Issues
